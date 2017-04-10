@@ -18,7 +18,10 @@ class SamsungS6 extends Phone{
         return this.os;
     }
 
-SamsungS6NewPhone = new SamsungS6('Blue', '$450', 'Android');
-SamsungS6NewPhone
+SamsungS6NewPhone = function(internalMemory, isSingleSIM, iemiNumber, color, price, os){
+    SamsungS6NewPhone.baseContructor.call(internalMemory, isSingleSIM, iemiNumber);
+    this.os = os;
+
+}
 
 }

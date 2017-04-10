@@ -6,4 +6,15 @@ class Iphone extends Phone{
     getIphoneOs(){
         return this.os;
     }
+
+    iPhoneS7 = function(internalMemory, isSingleSIM, iemiNumber, os){
+    iPhoneS7.baseContructor.call(internalMemory, isSingleSIM, iemiNumber);
+    this.os = os;
+
+    iPhoneS7.prototype = {
+        getPhoneIsSingleSim: function() {
+            return 'No';
+        }
+}
+}
 }
